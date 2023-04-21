@@ -1,0 +1,140 @@
+:root{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(tomates.jpg);
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin:auto;
+    background-color: rgb(245, 248, 189);
+    min-height: 100vh;
+    line-height: 2em;
+}
+header, section, nav{
+    border-bottom: 1px solid #CCC;
+    padding: 10px 50px;
+}
+
+section{
+    min-height: 50vh;
+}
+
+header{
+    text-align: center;
+}
+
+table{
+    width: 100%;
+}
+nav{
+    background-color: rgb(221, 116, 102);
+    text-align: center;
+}
+nav>div{
+    display: inline-block;
+    padding-left: 3% ;
+}
+a{
+    color: rgb(248, 239, 234);
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+text-decoration: underline;
+color:rgb(236, 151, 151);
+}
+
+
+tr:nth-child(4){
+    display:none;
+}
+
+tr:nth-child(2n){
+    background-color: rgb(178, 82, 98);
+}
+tr:nth-child(3n){
+    background-color: pink;
+}
+tr:nth-child(5n){
+    background-color: rgb(205, 255, 192);
+}
+tr:last-child{
+    background-color: rgb(155, 152, 153);
+}
+tr:first-child{
+    background-color: orange;
+    font-weight: bolder;
+}
+section:first-child{
+    background-color: rgb(220, 220, 246)
+}
+section:first-child + section{
+    background-color: rgb(198, 241, 142)
+}
+section:last-child{
+    background-color: #eebd37;
+}
+
+#sobre{
+    color: rgb(105,10 , 0) ;
+}
+
+#produtos{
+  color:rgb(87, 105, 64) ;  
+}
+
+#endereco{
+    color :rgb(114, 110, 100);
+    text-align: center;
+}
+
+td:last-child:not(tr:first-child td)::before{
+    content:"R$ ";
+}
+
+
+tr:not(tr:first-child):hover{
+    background-color: green;
+}
+
+:target{
+    border-bottom: 5px solid white;
+}
+address > p:first-child::before{
+    content:"Rua ";
+}
+address > p:nth-child(2n)::before{
+    content:"Bairro ";
+}
+address > p:last-child::after{
+    content: ' Santa Catarina';
+}
+
+/*
+* 
+Para esta atividade, você não deve alterar absolutamente nada o arquivo HTML.
+
+1 - formate os links como achar mais apropriado em seus estados (link, visited, hover, active)
+2 - os links devem estar lado a lado (display:inline ou inline-block)
+3 - a pizza do cheff está em falta, esconda esta linha da tabela (display:none)
+4 - faça a tabela ser listrada com cores diferentes
+5 - a primeira linha da tabela (cabeçalho) deve ser com uma cor destaque
+6 - cada seção deve ter uma cor de fundod diferente
+7 - Títulos devem possui cores diferentes em cada seção. No entanto, os parágrafos das seções devem ser de cores iguais.
+8 - adicione "R$" nos preços das pizzas
+9 - links externos devem possuir uma cor ligeiramente diferente (começa com http)
+10 - adicione "Rua" antes do nome da rua "Maria Aparecida Barbosa"
+11 - adicione "bairro antes de "Campo Duna"
+12 - adicione "Santa Catarina" após o nome da cidade (Garopaba)
+13 - ao passar o cursor sobre cada linha da tabela, ela deve ser "iluminada" com outra cor (menos o cabeçalho). 
+	 Dica: combinação de pseudo classes
+14 - o texto do endereço deve ser centralizado
+15 - Desenvolva 3 exemplos de uso de pseudo-classes que não foram demonstradas pelo professor
+16 - Desenvolva 2 exemplos de pseudo-elementos que não foram demonstradas pelo professor
+*/
